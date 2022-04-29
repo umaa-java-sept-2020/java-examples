@@ -88,6 +88,11 @@ public class AlBasics {
         ArrayList <Float> al3 = new ArrayList <Float>() {{add(2.3f); add(3.2f); add(.32f); }};
         System.out.println(al3);
 
+        //Collections.ncopies - intitalize same values for all elements
+        ArrayList <Integer> al4 = new ArrayList<>(Collections.nCopies(5,33)); //here, 5 times 33
+        // Collections.nCopies(count, element)
+        System.out.println(al4);
+
     }
 
 }
