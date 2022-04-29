@@ -133,7 +133,11 @@ public class AlBasics {
         List <Integer> li = al4.subList(6,10); //approach ii.
         System.out.println("List :- "+ li) ;
 
+        //lastIndexOf - returns the last index of occurrence of element
+        System.out.println("Last index of 33:- "+ al4.lastIndexOf(33));
+        System.out.println("Index of 5 = "+ al4.indexOf(5));
 
-        }
+
+    }
 
     }
