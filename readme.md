@@ -6,6 +6,7 @@
 * commit stage changes: `git commit -m "some message"`
 * push changes from local to remote: `git push origin main`
 * show current branch: `git branch`
+* List recent 10 commits: `git log -10 --oneline`
 
 # Collections
 * https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html
