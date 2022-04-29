@@ -4,6 +4,7 @@
 //Integer, String, Long, Float, Double, Boolean, Character, Byte, Short
 
 import java.util.ArrayList ;
+import java.util.Arrays;
 import java.util.Collections ;
 import java.util.List ;
 
@@ -74,6 +75,18 @@ public class AlBasics {
         //contains()
         System.out.println(al.contains("Sakib")); //false for not found
         System.out.println(al.contains("Rahul")); //true for found
+
+        //clear() - this will remove all the elements in one go
+        al.clear() ;
+        System.out.println(al);
+
+        //intialization using Arrays.asList()
+        ArrayList <Integer> al2 = new ArrayList<> (Arrays.asList(1,2,3,4,5)) ;
+        System.out.println(al2);
+
+        //intialization - anonymous inner class method
+        ArrayList <Float> al3 = new ArrayList <Float>() {{add(2.3f); add(3.2f); add(.32f); }};
+        System.out.println(al3);
 
     }
 
