@@ -66,6 +66,10 @@ public class AlBasics {
         Collections.sort(al, Collections.reverseOrder()); // descending order
         System.out.println(al);
 
+        //index of
+        System.out.println("index of element");
+        System.out.println(al.indexOf("Rahul"));
+
     }
 
 }
