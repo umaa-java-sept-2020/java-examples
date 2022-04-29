@@ -119,7 +119,19 @@ public class AlBasics {
         System.out.println("addAll from specified index:- ") ;
         System.out.println(al4);
 
+        //sublist
+        System.out.println("Sublist:- ");
+        System.out.println(al4.subList(3,7)); // from index inclusive, to index exclusive
 
+        //sublist return type is list
+        //therefore:- i. typecast into arraylist
+        //            ii. storing in list
+
+        ArrayList <Integer> al5 = new ArrayList<>(al4.subList(4,8)); //approach i.
+        System.out.println("al5 " + al5);
+
+        List <Integer> li = al4.subList(6,10); //approach ii.
+        System.out.println("List :- "+ li) ;
 
 
         }
