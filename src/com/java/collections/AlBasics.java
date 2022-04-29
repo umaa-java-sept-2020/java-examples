@@ -3,10 +3,12 @@
 //AL can't store primitive data types (int,char, double,long)
 //Integer, String, Long, Float, Double, Boolean, Character, Byte, Short
 
-import java.util.ArrayList ;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Iterator;
 import java.util.Arrays;
-import java.util.Collections ;
-import java.util.List ;
+import java.util.Enumeration;
+import java.util.List;
 
 public class AlBasics {
 
@@ -68,6 +70,7 @@ public class AlBasics {
         System.out.println(al);
 
         //index of
+        //if there's a multiple occurrence it'll return the first occurrence only
         System.out.println("index of element");
         System.out.println(al.indexOf("Rahul")); //indexOf () have int return type
         System.out.println(al.indexOf("Sakib")); //return -1 as element not found
@@ -80,11 +83,11 @@ public class AlBasics {
         al.clear() ;
         System.out.println(al);
 
-        //intialization using Arrays.asList()
+        //initialization using Arrays.asList()
         ArrayList <Integer> al2 = new ArrayList<> (Arrays.asList(1,2,3,4,5)) ;
         System.out.println(al2);
 
-        //intialization - anonymous inner class method
+        //initialization - anonymous inner class method
         ArrayList <Float> al3 = new ArrayList <Float>() {{add(2.3f); add(3.2f); add(.32f); }};
         System.out.println(al3);
 
@@ -93,6 +96,18 @@ public class AlBasics {
         // Collections.nCopies(count, element)
         System.out.println(al4);
 
-    }
+        //looping using iterator
+        System.out.println("Looping using iterator :-");
+        Iterator it = al4.iterator();
+        while(it.hasNext()) {
+            System.out.println(it.next());
+        }
 
-}
+
+
+
+
+
+        }
+
+    }
