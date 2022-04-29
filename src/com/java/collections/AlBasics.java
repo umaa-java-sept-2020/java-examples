@@ -68,7 +68,12 @@ public class AlBasics {
 
         //index of
         System.out.println("index of element");
-        System.out.println(al.indexOf("Rahul"));
+        System.out.println(al.indexOf("Rahul")); //indexOf () have int return type
+        System.out.println(al.indexOf("Sakib")); //return -1 as element not found
+
+        //contains()
+        System.out.println(al.contains("Sakib")); //false for not found
+        System.out.println(al.contains("Rahul")); //true for found
 
     }
 
