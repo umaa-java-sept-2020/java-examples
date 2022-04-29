@@ -103,7 +103,11 @@ public class AlBasics {
             System.out.println(it.next());
         }
 
-
+        //iteration through Enumeration interface
+        System.out.println("Iteration using Enumeration");
+        Enumeration <Integer> e = Collections.enumeration(al4);
+        while(e.hasMoreElements())
+            System.out.println(e.nextElement());
 
 
 
