@@ -137,6 +137,34 @@ public class AlBasics {
         System.out.println("Last index of 33:- "+ al4.lastIndexOf(33));
         System.out.println("Index of 5 = "+ al4.indexOf(5));
 
+        //comparing arraylist
+        //using contains()
+
+        ArrayList <Integer> al6 = new ArrayList<> () ;
+        ArrayList <Integer> al7 = new ArrayList<> () ;
+
+        al6.add(23);
+        al6.add(32);
+        al6.add(12);
+
+        al7.add(23);
+        al7.add(32);
+        al7.add(45);
+
+        //approach i. Storing the comparison in Integer ArrayList
+        ArrayList <Integer> c = new ArrayList<>() ;
+        for(Integer i : al6)
+            c.add(al7.contains(i) ? 1 : 0 ) ;
+        System.out.println(c) ;
+
+        //approach ii. Storing the comparison in String ArrayList
+        ArrayList <String> d = new ArrayList<>();
+        for(Integer i : al7)
+            d.add(al6.contains(i) ? "Yes" : "No");
+        System.out.println(d) ;
+
+
+
 
     }
 
