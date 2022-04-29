@@ -1,5 +1,5 @@
 # Git commands
-* Git has 2 directories: working_dir, stage_dir, local_commit_dir
+* Git has directories: working_dir, stage_dir, local_commit_dir
 * clone a new repository: `git clone git_url`
 * pull changes on existing repo: `git pull origin main`
 * add src directory to stage: `git add src`
