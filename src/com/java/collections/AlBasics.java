@@ -109,6 +109,16 @@ public class AlBasics {
         while(e.hasMoreElements())
             System.out.println(e.nextElement());
 
+        //addAll - add all elements of one list into another
+        al4.addAll(al2) ; //adding al2 into al4
+        System.out.println("After adding al2 in al4:- ");
+        System.out.println(al4);
+
+        //adAll - at specified location
+        al4.addAll(3,al2); //passing index from which insertion will take place
+        System.out.println("addAll from specified index:- ") ;
+        System.out.println(al4);
+
 
 
 
