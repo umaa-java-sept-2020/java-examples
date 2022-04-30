@@ -186,6 +186,11 @@ public class AlBasics {
             d.add(al6.contains(ia) ? "Yes" : "No");
         System.out.println(d) ;
 
+        //swapping elements
+        System.out.println("Before element swapping:- " + al7);
+        Collections.swap(al7, 0, 2) ; //passing Arraylist, index of two elements to be swapped
+        System.out.println("After element swapping :-" + al7) ;
+
 
 
 
