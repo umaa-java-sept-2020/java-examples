@@ -3,6 +3,8 @@
 //AL can't store primitive data types (int,char, double,long)
 //Integer, String, Long, Float, Double, Boolean, Character, Byte, Short
 
+package com.java.collections;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
@@ -84,8 +86,29 @@ public class AlBasics {
         System.out.println(al);
 
         //initialization using Arrays.asList()
-        ArrayList <Integer> al2 = new ArrayList<> (Arrays.asList(1,2,3,4,5)) ;
+        System.out.println("Aslist: -");
+        ArrayList <Integer> al2 = new ArrayList (Arrays.asList(1,2,3,4));
         System.out.println(al2);
+
+        int arr[] = new int[]{2,3,4,5} ;
+        System.out.println("toString = " + Arrays.toString(arr));
+        int i=0;
+        while(arr.length > i){
+            System.out.println(arr[i]);
+            i++;
+        }
+        ArrayList<Integer> al22 = new ArrayList(Arrays.asList(arr));
+        System.out.println("al22 = "+ al22);
+        Object obj = al22.get(0);
+        System.out.println("obj = "+ obj);
+//        System.out.println(Arrays.toString(obj));
+        //why in above line, object type can't be converted to String type ?
+        //where, toString() takes object as paramter ??
+
+        int result[] = (int[]) obj; //typecasting into int[] because at run time obj will have int arr[]
+        System.out.println(Arrays.toString(result)); //deepToString() will be used for string reps. of
+                                                    //multi-dimension array
+
 
         //initialization - anonymous inner class method
         ArrayList <Float> al3 = new ArrayList <Float>() {{add(2.3f); add(3.2f); add(.32f); }};
@@ -153,14 +176,14 @@ public class AlBasics {
 
         //approach i. Storing the comparison in Integer ArrayList
         ArrayList <Integer> c = new ArrayList<>() ;
-        for(Integer i : al6)
-            c.add(al7.contains(i) ? 1 : 0 ) ;
+        for(Integer ia : al6)
+            c.add(al7.contains(ia) ? 1 : 0 ) ;
         System.out.println(c) ;
 
         //approach ii. Storing the comparison in String ArrayList
         ArrayList <String> d = new ArrayList<>();
-        for(Integer i : al7)
-            d.add(al6.contains(i) ? "Yes" : "No");
+        for(Integer ia : al7)
+            d.add(al6.contains(ia) ? "Yes" : "No");
         System.out.println(d) ;
 
 
