@@ -1,6 +1,7 @@
 package com.java.collections;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class ArrayListMain {
@@ -15,7 +16,20 @@ public class ArrayListMain {
 
     public static void main(String[] args) {
 
-        m1();
+      //  m1();
+        m2();
+    }
+
+    /**
+     *  adding 1d int[] into the arraylist
+     */
+    public static void m2()
+    {
+        int[] arr= {1,2,3,4};
+        List<Integer> list =  new ArrayList(Arrays.asList(arr));
+        Object obj = list.get(0);
+        int[] result = (int[]) obj;
+        System.out.println(Arrays.toString(result));
     }
 
     public static void m1() {
