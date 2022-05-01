@@ -137,7 +137,7 @@ public class AlBasics {
         System.out.println("After adding al2 in al4:- ");
         System.out.println(al4);
 
-        //adAll - at specified location
+        //addAll - at specified location
         al4.addAll(3,al2); //passing index from which insertion will take place
         System.out.println("addAll from specified index:- ") ;
         System.out.println(al4);
@@ -191,9 +191,31 @@ public class AlBasics {
         Collections.swap(al7, 0, 2) ; //passing Arraylist, index of two elements to be swapped
         System.out.println("After element swapping :-" + al7) ;
 
+        //overriding toString()
+        ArrayList <Student> l8 = new ArrayList<Student>() ;
+        l8.add(new Student("Ram", 121));
+        l8.add(new Student("Sam", 211));
+        l8.add(new Student("Prakash", 132));
 
+        for(Student tmp : l8)
+            System.out.println(tmp);
 
+    }
 
+    public static class Student{ //why static need to be declared here ??
+        private String name ;
+        private int age ;
+
+        Student(String name, int age){
+            this.name = name ;
+            this.age = age;
+
+        }
+
+        @Override
+        public String toString() {
+            return "Name = "+ this.name + "Age ="+ this.age;
+        }
     }
 
     }
