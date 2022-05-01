@@ -60,15 +60,16 @@ public class HashMapMain {
         Student[] stdArr = {
                 s1, s2, s3, s4
         };
-        // Marks, Value (list of rollNums)
+        // Marks, Values (list of rollNums)
         Map<Integer, List<Integer>> map = new HashMap<>();
         for (Student s : stdArr) {
             if (map.containsKey(s.marks)) {
-                map.get(s.marks).add(s.rollNum);
+               List<Integer> rollNums = map.get(s.marks);
+               rollNums.add(s.rollNum); // 75 | [1,2]
             } else {
                 List<Integer> rollNums = new ArrayList<>();
                 rollNums.add(s.rollNum);
-                map.put(s.marks, rollNums);
+                map.put(s.marks, rollNums); // 75 | [1]
             }
         }
         System.out.println(map);
