@@ -8,7 +8,7 @@ public class TrimSize {
 
         ArrayList<Integer> al = new ArrayList<>(50);  //not working
         ArrayList <Integer> al2 = new ArrayList<>();
-        System.out.println("before trimToSize = "+ al.size());
+        System.out.println("before inserting elements = "+ al.size());
 
         al.add(1);
         al.add(2);
@@ -18,5 +18,8 @@ public class TrimSize {
 
         al.trimToSize();
         System.out.println("after trimToSize = "+ al.size());
+
+        al.ensureCapacity(20);
+        System.out.println("after ensure capacity = " + al.size() );  //how ensure capacity works then ?
     }
 }

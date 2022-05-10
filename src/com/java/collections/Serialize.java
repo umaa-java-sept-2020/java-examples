@@ -13,9 +13,9 @@ public class Serialize {
         al.add("hola");
 
         try{
-            FileOutputStream fos = new FileOutputStream("myfile");
-            ObjectOutputStream oos = new ObjectOutputStream(fos);
-            oos.writeObject(al);
+            FileOutputStream fos = new FileOutputStream("myfile"); // creating a reference to a file named myfile
+            ObjectOutputStream oos = new ObjectOutputStream(fos); //fos is passed as parameter as deestination where oos will write the stream
+            oos.writeObject(al); //al will converted into Stream of bytes ; which will be in memory
             oos.close();
             fos.close();
 
