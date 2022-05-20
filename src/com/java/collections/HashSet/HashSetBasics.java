@@ -112,7 +112,7 @@ public class HashSetBasics {
 //            arr[j++] = i;
 //        }
 //
-//        System.out.println("array iteration");
+//        System.out.println("array iteration"); //ERROR ?
 //        for(int i : arr)
 //            System.out.println(i);
 
