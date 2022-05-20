@@ -1,8 +1,5 @@
-package com.java.collections.vector;
+package com.java.collections.Vector;
 
-import com.sun.xml.internal.ws.addressing.WsaActionUtil;
-
-import java.lang.reflect.Array;
 import java.util.*;
 
 public class VBasics {
